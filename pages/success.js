@@ -4,7 +4,7 @@ import { BsBagCheckFill } from 'react-icons/bs'
 
 import { useGlobalContext } from '../context/stateContext'
 
-const success = () => {
+const Success = () => {
 
   const {setCartItems, setTotalPrice, setTotalQuantities } = useGlobalContext()
 
@@ -32,4 +32,4 @@ const success = () => {
   )
 }
 
-export default success
+export default Success
