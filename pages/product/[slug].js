@@ -8,9 +8,10 @@ const ProductDetails = ({product, products}) => {
       
       const {image, name, details, price} = product
       const [index, setIndex] = useState(0)
-      const { qty, changeQty, addToCart } = useGlobalContext()
+      const { qty, changeQty, addToCart, setShowCart } = useGlobalContext()
       const handlePayment = ()=>{
-        
+        addToCart(product, qty)
+        setShowCart(true)
       }
       return  (
         
@@ -113,7 +114,5 @@ export const getStaticPaths = async ()=>{
         fallback:'blocking'
     }
 }
-
-
 
 export default ProductDetails

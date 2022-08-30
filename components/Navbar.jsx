@@ -5,6 +5,7 @@ import { BsFillSunFill } from 'react-icons/bs'
 import { MdNightlight } from 'react-icons/md'
 import { useGlobalContext } from '../context/stateContext'
 import { Cart } from './'
+
 const Navbar = ({handleTheme, theme}) => {
   const {totalQuantities, setShowCart, showCart} = useGlobalContext()
   return (
